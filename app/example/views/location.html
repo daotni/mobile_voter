@@ -1,0 +1,17 @@
+<div class="wrapper-location padding" ng-controller="SurveyController">
+  <super-navbar>
+    <super-navbar-title>
+      RSQ Survey
+    </super-navbar-title>
+  </super-navbar>
+  <p>This survey is a study of Restaurant<br/>Customers Perceptions of Foreign Tourists in Thailand</p>
+  <div class="choose-location-box">
+    <label>Please Choose location</label>
+    <select ng-options="obj.state group by obj.province for obj in stateList" ng-model="selectedState">
+      <option value="">-- เลือกอำเภอ --</option>
+    </select>
+  </div>
+  <div class="wrapper-next-btn">
+    <button class='next-btn' ng-click="goNext()" ng-disabled="selectedState === null">Next</button>
+  </div>
+</div>

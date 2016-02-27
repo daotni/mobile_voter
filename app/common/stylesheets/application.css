@@ -1,0 +1,122 @@
+.supersonic-navbar-mock {
+  background-color: #00B5FF !important;
+  text-align: center;
+  font-weight: 600;
+}
+
+.full-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.center-screen {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.center-screen img {
+  height: auto;
+  position: relative;
+  width: 80%; 
+  display: block;
+  margin-bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 240px;
+}
+
+.start-btn {
+  background-color: #42a5f5;
+  color: white;
+  padding: 4px 114px;
+  font-size: 22px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.wrapper-next-btn {
+  text-align: center;
+}
+
+.next-btn {
+  background-color: #42a5f5;
+  color: white;
+  padding: 4px 114px;
+  font-size: 22px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.next-btn[disabled] {
+  background-color: #90caf9;
+}
+
+.start-btn:active, .next-btn:active {
+  background-color: #90caf9;
+}
+
+p {
+  font-size: 17px;
+  margin-top: 20px;
+  line-height: 1.5em;
+}
+
+.choose-location-box {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.choose-location-box label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.choose-location-box select {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 10px;
+}
+
+.wrapper-survey h1 {
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.wrapper-survey p {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.wrapper-vote {
+  margin-bottom: 15px;
+}
+
+.wrapper-vote .fa {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.wrapper-vote .fa.fa-star {
+  color: #42a5f5;
+}
+
+.wrapper-vote + .wrapper-next-btn {
+  margin-top: 50px;
+}
+
+.vote-star {
+  padding-left: 15px;
+}

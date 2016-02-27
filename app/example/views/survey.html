@@ -1,0 +1,23 @@
+<div class="padding wrapper-survey" ng-controller="SurveyController">
+  <super-navbar>
+    <super-navbar-title>
+      RSQ Survey
+    </super-navbar-title>
+  </super-navbar>
+  <h1>{{currentPage.title}}</h1>
+
+  <div class="wrapper-vote">
+    <span class="answernum">{{currentPage.start_with}}/{{numOfQuestions}}</span>
+    <p>{{currentPage.first_question}}</p>
+    <div vote-star ng-model="firstVote" class="vote-star"></div>
+  </div>
+  <div class="wrapper-vote" ng-show="currentPage.second_question !== undefined">
+    <span class="answernum">{{currentPage.start_with + 1}}/{{numOfQuestions}}</span>
+    <p>{{currentPage.second_question}}</p>
+    <div vote-star ng-model="secondVote" class="vote-star"></div>
+  </div>
+
+  <div class="wrapper-next-btn">
+    <button class='next-btn' ng-click="nextSurvey()" ng-disabled="firstVote === 0 || (currentPage.second_question !== undefined && secondVote === 0)">Next</button>
+  </div>
+</div>
